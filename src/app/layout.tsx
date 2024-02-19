@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Poppins } from "next/font/google";
+
+const PoppinsFont = Poppins({
+	subsets: ["latin"],
+	weight: "400"
+});
 
 export const metadata: Metadata = {
 	title: "Portifólio",
@@ -18,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={PoppinsFont.className}>
 				<div className="container">
 					<NavBar></NavBar>
 					{children}

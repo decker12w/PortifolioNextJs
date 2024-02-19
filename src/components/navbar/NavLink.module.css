@@ -1,0 +1,33 @@
+.link {
+	color: white;
+	font-size: 18px;
+	font-family: Poppins, sans-serif;
+	padding: 0.5rem 1rem;
+	font-weight: bold;
+	margin: 0 0.5rem;
+	position: relative;
+	transition:
+		color 0.3s ease-in-out,
+		transform 0.3s ease-in-out;
+}
+
+.link:hover {
+	color: #5f5aa2;
+	transform: scale(1.1);
+}
+
+.link::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 5px;
+	background: #5f5aa2;
+	left: 50%;
+	bottom: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.link:hover::after {
+	width: 100%;
+	left: 0;
+}
