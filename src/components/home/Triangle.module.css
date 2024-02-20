@@ -1,0 +1,7 @@
+.triangleDraw {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-right: 480px solid transparent;
+	border-bottom: 980px solid var(--purpleSoft);
+}
