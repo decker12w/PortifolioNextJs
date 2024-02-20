@@ -1,6 +1,6 @@
 import NavLink from "./NavLink";
 import Style from "./NavBar.module.css";
-
+import { CiDark } from "react-icons/ci";
 interface listaLinks {
 	nome: string;
 	link: string;
@@ -38,6 +38,7 @@ export default function NavBar() {
 					return <NavLink key={index} nome={link.nome} link={link.link}></NavLink>;
 				})}
 			</ul>
+			<CiDark className={Style.icon} />
 		</nav>
 	);
 }

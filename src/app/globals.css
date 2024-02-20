@@ -4,11 +4,8 @@
 
 :root {
 	--bg: #262626;
-	--textLink: #5f5aa2;
-	--bgSoft: #2d2b42;
-	--text: white;
-	--textSoft: #e5e5e5;
-	--btn: #3673fd;
+	--purple: #5f5aa2;
+	--purpleSoft: #6e07f3;
 }
 
 body {
