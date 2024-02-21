@@ -1,8 +1,8 @@
-import Introduction from "../components/home/Introduction";
-import SobreMim from "../components/home/SobreMim";
-import Triangle from "../components/home/Triangle";
+import Introduction from "../components/home/introducao/Introduction";
+import ListaContatos from "../components/home/ListaContatos/ListaContatos";
+import SobreMim from "../components/home/SobreMim/SobreMim";
+import Triangle from "../components/home/Formas/Triangle";
 import Style from "./Home.module.css";
-import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
 	return (
@@ -13,11 +13,7 @@ export default function Home() {
 			</div>
 			<Introduction></Introduction>
 			<SobreMim></SobreMim>
-			<div className={Style.container2}>
-				<FaGithub className={Style.icon}></FaGithub>
-				<FaWhatsapp className={Style.icon}>/</FaWhatsapp>
-				<FaLinkedin className={Style.icon}></FaLinkedin>
-			</div>
+			<ListaContatos></ListaContatos>
 
 			<div className={Style.container3}>
 				<Triangle className={Style.rightTriangle}></Triangle>

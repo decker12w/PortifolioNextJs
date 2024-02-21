@@ -23,36 +23,16 @@
 	position: absolute;
 }
 
-.container2 {
-	position: absolute;
-	right: 95px;
-	top: 300px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-}
-
-.icon {
-	font-size: 25px;
-	color: white;
-}
-
 .leftBottomTriangle {
 	transform: rotate(180deg);
 	transform: scaleY(-1);
 }
 
-.rightTriangle {
+div.rightTriangle {
 	z-index: -1;
 	transform: rotate(180deg);
 	border-right: 480px solid transparent;
 	border-bottom: 980px solid var(--purpleSoft);
-}
-
-.rightBottomTriangle {
-	transform: scaleX(-1);
 }
 
 @media (max-width: 1670px) {
@@ -65,14 +45,14 @@
 	.container2 {
 		display: none;
 	}
-	.rightTriangle {
+	div.rightTriangle {
 		border-right: 280px solid transparent;
 		border-bottom: 780px solid var(--purpleSoft);
 	}
 }
 
 @media (max-width: 880px) {
-	.rightTriangle {
+	div.rightTriangle {
 		border-right: 180px solid transparent;
 		border-bottom: 580px solid var(--purpleSoft);
 	}

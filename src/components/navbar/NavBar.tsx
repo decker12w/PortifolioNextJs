@@ -17,12 +17,12 @@ const listaNavLinks: listaLinks[] = [
 		link: "#sobre"
 	},
 	{
-		nome: "Projetos",
-		link: "/projetos"
+		nome: "Habilidades",
+		link: "/habilidades"
 	},
 	{
-		nome: "Habilidades",
-		link: "/Habilidades"
+		nome: "Projetos",
+		link: "/projetos"
 	},
 	{
 		nome: "Contato",
