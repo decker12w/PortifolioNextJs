@@ -7,7 +7,7 @@
 	margin-top: 50px;
 }
 .container {
-	gap: 60px;
+	gap: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -28,4 +28,13 @@
 .icon {
 	font-size: 35px;
 	color: white;
+}
+
+@media (max-width: 1300px) {
+	.container {
+		display: none;
+	}
+	.icon {
+		display: none;
+	}
 }

@@ -26,8 +26,8 @@ export default function RootLayout({
 				<div className="container">
 					<NavBar></NavBar>
 					{children}
-					<Footer></Footer>
 				</div>
+				<Footer></Footer>
 			</body>
 		</html>
 	);

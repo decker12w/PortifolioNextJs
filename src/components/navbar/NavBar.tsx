@@ -1,6 +1,7 @@
 import NavLink from "./NavLink";
 import Style from "./NavBar.module.css";
 import { CiDark } from "react-icons/ci";
+
 interface listaLinks {
 	nome: string;
 	link: string;
@@ -14,6 +15,10 @@ const listaNavLinks: listaLinks[] = [
 	{
 		nome: "Sobre Mim",
 		link: "#sobre"
+	},
+	{
+		nome: "Projetos",
+		link: "/projetos"
 	},
 	{
 		nome: "Habilidades",

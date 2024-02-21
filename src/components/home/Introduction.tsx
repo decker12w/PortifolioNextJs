@@ -3,7 +3,7 @@ import Style from "./Introduction.module.css";
 
 export default function Introduction() {
 	return (
-		<section className={Style.container1}>
+		<section className={`${Style.container1} ${Style.linha}`}>
 			<div className={Style.container2}>
 				<h1 className={Style.title1}>
 					<span className={Style.char}>J</span>osé Maia

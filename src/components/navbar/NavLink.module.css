@@ -31,3 +31,11 @@
 	width: 100%;
 	left: 0;
 }
+.linkActive {
+	color: var(--purpleSoft);
+}
+
+.linkActive::after {
+	width: 100%;
+	left: 0;
+}
