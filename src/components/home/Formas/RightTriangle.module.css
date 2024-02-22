@@ -1,0 +1,28 @@
+.container {
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+}
+
+div.rightTriangle {
+	z-index: -1;
+	transform: rotate(180deg);
+	border-right: 480px solid transparent;
+	border-bottom: 980px solid var(--purpleSoft);
+}
+
+@media (max-width: 1300px) {
+	div.rightTriangle {
+		border-right: 280px solid transparent;
+		border-bottom: 780px solid var(--purpleSoft);
+	}
+}
+
+@media (max-width: 880px) {
+	div.rightTriangle {
+		border-right: 180px solid transparent;
+		border-bottom: 580px solid var(--purpleSoft);
+	}
+}

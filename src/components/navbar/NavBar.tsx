@@ -1,13 +1,13 @@
 import NavLink from "./NavLink";
 import Style from "./NavBar.module.css";
 import { CiDark } from "react-icons/ci";
-
-interface listaLinks {
+import HamburguerMenu from "./HamburguerMenu";
+interface LinkProps {
 	nome: string;
 	link: string;
 }
 
-const listaNavLinks: listaLinks[] = [
+const listaNavLinks: LinkProps[] = [
 	{
 		nome: "Home",
 		link: "/"
@@ -44,6 +44,7 @@ export default function NavBar() {
 				})}
 			</ul>
 			<CiDark className={Style.icon} />
+			<HamburguerMenu link={listaNavLinks}></HamburguerMenu>
 		</nav>
 	);
 }

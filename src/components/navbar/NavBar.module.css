@@ -12,7 +12,6 @@
 	align-items: center;
 	justify-content: center;
 }
-
 .Logo {
 	text-align: center;
 	font-size: 25px;
@@ -48,5 +47,11 @@
 	}
 	.icon {
 		display: none;
+	}
+	.close {
+		display: block;
+	}
+	.hamburguer {
+		display: block;
 	}
 }

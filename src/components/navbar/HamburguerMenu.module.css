@@ -1,0 +1,77 @@
+.SideBarNav {
+	background: black;
+	width: 200px;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	border-radius: 50% 0 0 50%;
+}
+
+.hamburguer,
+.close {
+	display: none;
+}
+
+.icon {
+	z-index: 1000;
+	padding: 5px;
+	border-radius: 50%;
+	font-size: 40px;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+.icon:hover {
+	background-color: white;
+	color: black;
+	transform: scale(1.2);
+}
+
+.icon:active {
+	transform: scale(0.9);
+}
+
+.containerIcons .icon {
+	font-size: 30px;
+}
+
+.containerIcons {
+	margin-left: 30px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	justify-items: center;
+}
+.containerLinks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	justify-items: center;
+}
+.Nav {
+	z-index: 1000;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.NavWrapper {
+	width: 100%;
+}
+@media (max-width: 1300px) {
+	.container {
+		display: none;
+	}
+
+	.hamburguer,
+	.close {
+		display: block;
+	}
+}

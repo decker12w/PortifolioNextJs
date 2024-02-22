@@ -31,8 +31,10 @@
 	width: 100%;
 	left: 0;
 }
+
 .linkActive {
 	color: var(--purpleSoft);
+	transform: scale(0.9);
 }
 
 .linkActive::after {

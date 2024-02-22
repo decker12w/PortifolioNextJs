@@ -1,15 +1,22 @@
 .button {
 	padding: 20px;
 	border-radius: 20px;
-	background-color: var(--purpleSoft);
 	color: white;
 	font-weight: bold;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: linear-gradient(to right, white 50%, var(--purpleSoft) 50%);
+	background-size: 250% 100%;
+	background-position: right bottom;
+	transition: all 0.3s ease-out;
 }
 
+.button:hover {
+	background-position: left bottom;
+	color: var(--purpleSoft);
+}
 @media (max-width: 1300px) {
 	.button {
 		width: 300px;

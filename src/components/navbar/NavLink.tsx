@@ -4,11 +4,6 @@ import Link from "next/link";
 import Style from "./NavLink.module.css";
 import { usePathname } from "next/navigation";
 
-interface LinkProps {
-	nome: string;
-	link: string;
-}
-
 export default function NavLink({ nome, link }: LinkProps) {
 	const pathname = usePathname();
 
