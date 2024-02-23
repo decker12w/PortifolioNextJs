@@ -18,7 +18,7 @@ export default function Introduction() {
 					initial="hidden"
 					animate="visible"
 					variants={variants}
-					transition={{ ease: "easeOut", duration: 0.8 }}
+					transition={{ ease: "easeOut", duration: 0.3 }}
 				>
 					<span className={Style.char}>J</span>osé Maia
 				</motion.h1>
@@ -28,7 +28,7 @@ export default function Introduction() {
 						initial="hidden"
 						animate="visible"
 						variants={variants}
-						transition={{ ease: "easeOut", duration: 1.2 }}
+						transition={{ ease: "easeOut", duration: 0.5 }}
 					>
 						Full-Stack Developer
 					</motion.h2>
@@ -37,7 +37,7 @@ export default function Introduction() {
 						initial="hidden"
 						animate="visible"
 						variants={variants}
-						transition={{ ease: "easeOut", duration: 1.8 }}
+						transition={{ ease: "easeOut", duration: 1.0 }}
 					>
 						Olá me chamo José Maia de Oliveira, sou um desenvolvedor Full-Stack junior
 					</motion.p>
@@ -48,7 +48,7 @@ export default function Introduction() {
 				initial="hidden"
 				animate="visible"
 				variants={variants}
-				transition={{ ease: "easeOut", duration: 2 }}
+				transition={{ ease: "easeOut", duration: 1.2 }}
 			>
 				<Button text={"Download csv"}></Button>
 				<Button text={"Entrar em contato"}></Button>
