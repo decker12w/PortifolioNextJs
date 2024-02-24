@@ -1,6 +1,6 @@
 "use client";
 
-import { Reveal } from "../../utils/Reveal";
+import { Reveal } from "../utils/Reveal";
 import Style from "./SobreMim.module.css";
 import Image from "next/image";
 export default function SobreMim() {

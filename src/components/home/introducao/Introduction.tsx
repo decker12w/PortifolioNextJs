@@ -30,6 +30,7 @@ export default function Introduction() {
 					<Button text={"Entrar em contato"}></Button>
 				</div>
 			</Reveal>
+			<div className={Style.line}></div>
 		</section>
 	);
 }

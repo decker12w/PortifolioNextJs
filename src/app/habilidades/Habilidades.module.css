@@ -1,0 +1,63 @@
+.containerPrincipal {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 60px;
+}
+
+.titlePage {
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+
+.title {
+	color: white;
+	font-size: xx-large;
+}
+
+@keyframes colorChange {
+	0% {
+		border-color: #8257e6;
+		box-shadow: 16px 14px 20px #8257e6;
+	}
+	33% {
+		border-color: red;
+		box-shadow: 16px 14px 20px red;
+	}
+	66% {
+		border-color: green;
+		box-shadow: 16px 14px 20px green;
+	}
+	100% {
+		border-color: #8257e6;
+		box-shadow: 16px 14px 20px #8257e6;
+	}
+}
+
+.containerBlocos {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 60px;
+	gap: 50px;
+	border: solid 3px #8257e6;
+	border-radius: 20%;
+	box-shadow: 16px 14px 20px #8257e6;
+	overflow: hidden;
+	animation: colorChange 10s linear infinite;
+}
+
+.containerLinguagens {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 10px;
+}
+
+.icon {
+	font-size: 50px;
+	color: #8257e6;
+}

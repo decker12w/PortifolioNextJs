@@ -27,9 +27,9 @@ export default function RootLayout({
 				<div className="container">
 					<NavBar></NavBar>
 					{children}
+					<Footer></Footer>
 				</div>
 				<ScrollTop></ScrollTop>
-				<Footer></Footer>
 			</body>
 		</html>
 	);

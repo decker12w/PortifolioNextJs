@@ -2,7 +2,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 200px;
+	gap: 60px;
+	margin-bottom: 15%;
 }
 
 .circle {
@@ -47,28 +48,41 @@
 	}
 }
 
-@media (max-width: 1570px) {
+@media (max-width: 1300px) {
 	.containerSobreMim {
 		flex-direction: column-reverse;
 		gap: 30px;
 	}
 
 	.circle {
-		width: 300px;
-		height: 300px;
+		width: 450px;
+		height: 450px;
 	}
 }
 
-@media (max-width: 1300px) {
-}
-
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 	.containerSobreMim {
-		gap: 10px;
+		gap: 30px;
 	}
 	.circle {
-		width: 200px;
-		height: 200px;
+		width: 250px;
+		height: 250px;
+	}
+	.containerTexto {
+		font-size: 15px;
+	}
+	.titleSobreMim {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 576px) {
+	.containerSobreMim {
+		gap: 30px;
+	}
+	.circle {
+		width: 250px;
+		height: 250px;
 	}
 	.containerTexto {
 		font-size: 15px;

@@ -14,7 +14,7 @@ const listaNavLinks: LinkProps[] = [
 	},
 	{
 		nome: "Sobre Mim",
-		link: "#sobre"
+		link: "/sobre"
 	},
 	{
 		nome: "Habilidades",

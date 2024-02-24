@@ -1,0 +1,20 @@
+.card {
+	border-radius: 30px 30px 0px 0px;
+	padding: 20px;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	color: #8257e6;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #212121;
+	gap: 20px;
+	box-shadow: 0 2px 5px rgba(103, 4, 216, 0.3);
+	border-bottom: 4px solid;
+	border-image: linear-gradient(to right, violet, indigo) 1;
+}
+
+.title {
+	font-size: 15px;
+}
