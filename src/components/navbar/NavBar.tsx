@@ -23,10 +23,6 @@ const listaNavLinks: LinkProps[] = [
 	{
 		nome: "Projetos",
 		link: "/projetos"
-	},
-	{
-		nome: "Contato",
-		link: "/contato"
 	}
 ];
 

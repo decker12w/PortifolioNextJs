@@ -1,0 +1,28 @@
+.container {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 4px solid;
+	border-image: linear-gradient(to right, violet, indigo) 1;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.containerTexto {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 1.1rem;
+}
+
+.image {
+	z-index: -1;
+}

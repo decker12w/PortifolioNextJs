@@ -1,0 +1,33 @@
+.containerPrincipal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.containerIcons {
+	display: flex;
+	gap: 10px;
+}
+
+.containerDestaque {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.titlePage {
+	text-align: start;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	border-bottom: 4px solid;
+	border-image: linear-gradient(to right, violet, indigo) 1;
+	margin-right: auto;
+}
+
+.icon {
+	font-size: 30px;
+	color: var(--purpleSoft);
+}

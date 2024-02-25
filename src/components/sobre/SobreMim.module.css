@@ -3,7 +3,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: 60px;
-	margin-bottom: 15%;
+	margin-top: 5%;
+	margin-bottom: 10%;
 }
 
 .circle {
@@ -22,12 +23,15 @@
 	color: white;
 	gap: 30px;
 	font-size: 20px;
-	max-width: 800px;
+	max-width: 700px;
+	text-align: justify;
 }
 
 .titleSobreMim {
 	font-size: 60px;
 	font-weight: bold;
+	border-bottom: 4px solid;
+	border-image: linear-gradient(to right, violet, indigo) 1;
 }
 
 @keyframes shapeBlob {

@@ -12,15 +12,15 @@ export default function SobreMim() {
 				</Reveal>
 				<Reveal>
 					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repellat
-						assumenda, animi praesentium dolorem vero repudiandae qui quia excepturi, cumque
-						earum recusandae vitae amet asperiores dolore! Praesentium quasi minus expedita?
-						Obcaecati, dolorem! Ex eum debitis fugit mollitia nostrum. Alias tempore natus et,
-						voluptatibus id quod sunt, tenetur repudiandae voluptatum quasi iste veritatis
-						repellendus quisquam. Vel voluptatibus animi magni nostrum amet? Accusantium omnis
-						officiis commodi culpa amet, velit sit molestiae delectus eligendi autem,
-						necessitatibus fugiat perspiciatis incidunt asperiores quod fugit inventore porro.
-						Excepturi
+						Meu nome é José Maia de Oliveira, tenho 20 anos e desde 2020 venho me dedicando ao
+						estudo da programação. Durante a pandemia, tive a oportunidade de aprofundar meu
+						conhecimento nessa área, começando pela lógica de programação e progredindo para
+						as tecnologias web. Em 2023, ingressei no curso de Bacharelado em Ciências da
+						Computação na Universidade Federal de São Carlos (UFSCar), onde tenho aprimorado
+						minhas habilidades e adquirido novos conhecimentos. Atualmente, estou focando meus
+						estudos tanto na área de Backend quanto em DevOps, buscando dominar as tecnologias
+						associadas a essas áreas. Meu objetivo é consolidar esses conhecimentos e me
+						tornar um desenvolvedor de software reconhecido no mercado.
 					</p>
 				</Reveal>
 			</div>
