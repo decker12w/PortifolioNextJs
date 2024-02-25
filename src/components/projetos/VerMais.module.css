@@ -1,0 +1,18 @@
+.verMais {
+	z-index: -100000;
+	position: absolute;
+	gap: 50%;
+	padding: 5px;
+	bottom: -40px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: #fff;
+	color: black;
+	border-radius: 5px;
+}
+
+.data {
+	font-size: 0.8rem;
+}

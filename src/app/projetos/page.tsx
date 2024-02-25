@@ -8,26 +8,68 @@ import { FaPython } from "react-icons/fa";
 export default function Projetos() {
 	return (
 		<div className={Style.containerPrincipal}>
-			<h1 className={Style.titlePage}>Destaque</h1>
-			<div className={Style.containerDestaque}>
-				<CardProjetos title={"TÁ CHOVENDO HAMBURGUER "} src={"/TaChovendo.png"}>
-					<div className={Style.containerIcons}>
-						<TbBrandCSharp className={Style.icon}> </TbBrandCSharp>
-						<FaUnity className={Style.icon}></FaUnity>
-					</div>
-				</CardProjetos>
-				<CardProjetos title={"TRILHAS DO MEDO"} src={"/TrilhasDoMedo.png"}>
-					<div className={Style.containerIcons}>
-						<TbBrandCSharp className={Style.icon}> </TbBrandCSharp>
-						<FaUnity className={Style.icon}></FaUnity>
-					</div>
-				</CardProjetos>
-				<CardProjetos title={"DESEMPENHO NO ENEM 2022"} src={"/RelatorioEnem.png"}>
-					<div className={Style.containerIcons}>
-						<SiPandas className={Style.icon}></SiPandas>
-						<FaPython className={Style.icon}></FaPython>
-					</div>
-				</CardProjetos>
+			<div className={Style.containerBlocos}>
+				<h1 className={Style.titlePage}>Destaque</h1>
+				<div className={Style.containerDestaque}>
+					<CardProjetos
+						title={"TÁ CHOVENDO HAMBURGUER "}
+						src={"/TaChovendo.png"}
+						data={"27/12/2003"}
+					>
+						<div className={Style.containerIcons}>
+							<TbBrandCSharp className={Style.icon}> </TbBrandCSharp>
+							<FaUnity className={Style.icon}></FaUnity>
+						</div>
+					</CardProjetos>
+					<CardProjetos title={"TRILHAS DO MEDO"} src={"/TrilhasDoMedo.png"} data={""}>
+						<div className={Style.containerIcons}>
+							<TbBrandCSharp className={Style.icon}> </TbBrandCSharp>
+							<FaUnity className={Style.icon}></FaUnity>
+						</div>
+					</CardProjetos>
+					<CardProjetos title={"DESEMPENHO NO ENEM 2022"} src={"/RelatorioEnem.png"} data={""}>
+						<div className={Style.containerIcons}>
+							<SiPandas className={Style.icon}></SiPandas>
+							<FaPython className={Style.icon}></FaPython>
+						</div>
+					</CardProjetos>
+				</div>
+			</div>
+
+			<div className={Style.containerBlocos}>
+				<h1 className={Style.titlePage}>Todos os Projetos</h1>
+				<div className={Style.containerDestaque}>
+					<CardProjetos
+						title={"TÁ CHOVENDO HAMBURGUER "}
+						src={"/TaChovendo.png"}
+						data={"27/12/2003"}
+					>
+						<div className={Style.containerIcons}>
+							<TbBrandCSharp className={Style.icon}> </TbBrandCSharp>
+							<FaUnity className={Style.icon}></FaUnity>
+						</div>
+					</CardProjetos>
+					<CardProjetos
+						title={"TRILHAS DO MEDO"}
+						src={"/TrilhasDoMedo.png"}
+						data={"27/12/2003"}
+					>
+						<div className={Style.containerIcons}>
+							<TbBrandCSharp className={Style.icon}> </TbBrandCSharp>
+							<FaUnity className={Style.icon}></FaUnity>
+						</div>
+					</CardProjetos>
+					<CardProjetos
+						title={"DESEMPENHO NO ENEM 2022"}
+						src={"/RelatorioEnem.png"}
+						data={"27/12/2003"}
+					>
+						<div className={Style.containerIcons}>
+							<SiPandas className={Style.icon}></SiPandas>
+							<FaPython className={Style.icon}></FaPython>
+						</div>
+					</CardProjetos>
+				</div>
 			</div>
 		</div>
 	);

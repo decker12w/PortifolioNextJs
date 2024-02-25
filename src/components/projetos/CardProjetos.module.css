@@ -8,8 +8,20 @@
 	border-bottom: 4px solid;
 	border-image: linear-gradient(to right, violet, indigo) 1;
 	background-color: rgba(0, 0, 0, 0.6);
+	transition: all 0.2s ease-in-out;
 }
+
+.container:hover {
+	transform: scale(1.1);
+	background-color: none;
+}
+
+.container:hover .containerTexto {
+	opacity: 0;
+}
+
 .containerTexto {
+	transition: all 0.2s ease-in-out;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
