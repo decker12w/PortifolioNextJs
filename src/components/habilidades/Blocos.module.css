@@ -1,16 +1,3 @@
-.containerPrincipal {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	gap: 60px;
-}
-
-.titlePage {
-	font-size: 50px;
-	font-weight: bold;
-	color: white;
-}
-
 .title {
 	color: white;
 	font-size: xx-large;
@@ -32,6 +19,21 @@
 	100% {
 		border-color: #8257e6;
 		box-shadow: 16px 14px 20px #8257e6;
+	}
+}
+
+@keyframes colorChangee {
+	0% {
+		border-color: #8257e6;
+	}
+	33% {
+		border-color: #d71e47;
+	}
+	66% {
+		border-color: #06eb76;
+	}
+	100% {
+		border-color: #8257e6;
 	}
 }
 
@@ -57,8 +59,19 @@
 	gap: 10px;
 }
 
-@media (max-width: 1500px) {
-	.containerPrincipal {
-		grid-template-columns: 1fr;
+@media (max-width: 1300px) {
+	.containerBlocos {
+		padding: 40px;
+	}
+}
+@media (max-width: 800px) {
+	.containerIcones {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.containerBlocos {
+		border-radius: 0;
+		box-shadow: 0 0 0;
+		animation: colorChangee 15s linear infinite;
 	}
 }

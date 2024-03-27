@@ -12,7 +12,7 @@ export default function Projetos() {
 				<h1 className={Style.titlePage}>Destaque</h1>
 				<div className={Style.containerDestaque}>
 					<CardProjetos
-						title={"TÁ CHOVENDO HAMBURGUER "}
+						title={"TÁ CHOVENDO HAMBURGUER"}
 						src={"/TaChovendo.png"}
 						data={"27/12/2003"}
 					>

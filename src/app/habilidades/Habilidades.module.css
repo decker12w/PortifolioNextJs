@@ -28,3 +28,20 @@
 		border-color: #8257e6;
 	}
 }
+
+@media (max-width: 1300px) {
+	.titlePage {
+		margin: 0;
+		font-size: 40px;
+	}
+	.containerPrincipal {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 800px) {
+	.titlePage {
+		font-size: 25px;
+		animation: colorChange 15s linear infinite;
+	}
+}

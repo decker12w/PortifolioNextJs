@@ -12,10 +12,14 @@
 }
 
 .container:hover {
+	cursor: pointer;
 	transform: scale(1.1);
 	background-color: none;
 }
 
+.container:active {
+	transform: scale(1);
+}
 .container:hover .containerTexto {
 	opacity: 0;
 }

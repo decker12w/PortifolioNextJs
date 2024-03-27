@@ -36,3 +36,16 @@
 	color: white;
 	transform: scale(1.1);
 }
+
+@media (max-width: 1300px) {
+	.card {
+		width: 95px;
+		height: 120px;
+	}
+	.title {
+		font-size: 12px;
+	}
+	.icon {
+		font-size: 40px;
+	}
+}

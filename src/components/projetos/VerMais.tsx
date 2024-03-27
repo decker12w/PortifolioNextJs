@@ -12,7 +12,7 @@ export default function VerMais({ data }: VerMaisProps) {
 			className={Style.verMais}
 			initial={{ opacity: 0, y: -40 }}
 			animate={{ opacity: 1, y: 10 }}
-			transition={{ duration: 0.5, delay: 0.2 }}
+			transition={{ duration: 0.5, delay: 0.1 }}
 		>
 			<p className={Style.data}>{data}</p>
 			<Botao text={"Ver mais"}></Botao>
