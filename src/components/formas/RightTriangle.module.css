@@ -10,19 +10,19 @@ div.rightTriangle {
 	z-index: -1;
 	transform: rotate(180deg);
 	border-right: 480px solid transparent;
-	border-bottom: 930px solid var(--purpleSoft);
+	border-bottom: 930px solid var(--trianglesColor);
 }
 
 @media (max-width: 1300px) {
 	div.rightTriangle {
 		border-right: 280px solid transparent;
-		border-bottom: 780px solid var(--purpleSoft);
+		border-bottom: 780px solid var(--trianglesColor);
 	}
 }
 
 @media (max-width: 880px) {
 	div.rightTriangle {
 		border-right: 180px solid transparent;
-		border-bottom: 580px solid var(--purpleSoft);
+		border-bottom: 580px solid var(--trianglesColor);
 	}
 }

@@ -47,7 +47,7 @@ export const Reveal = ({ children, width = "fit-content" }: RevealProps) => {
 						bottom: 4,
 						left: 0,
 						right: 0,
-						background: "var(--purpleSoft)",
+						background: "var(--RevealColor)",
 						zIndex: 200
 					}}
 				></motion.div>

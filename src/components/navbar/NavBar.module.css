@@ -15,13 +15,13 @@
 .Logo {
 	text-align: center;
 	font-size: 25px;
-	color: white;
+	color: var(--text);
 	font-weight: bold;
 }
 
 .LogoSecondChar {
 	font-size: 40px;
-	color: #6e07f3;
+	color: var(--singleLettersColor);
 }
 
 .icon {
@@ -29,11 +29,11 @@
 	padding: 10px;
 	border-radius: 50%;
 	font-size: 55px;
-	color: white;
+	color: var(--icons);
 	transition: all 0.2s ease-in-out;
 }
 .icon:hover {
-	background-color: white;
+	background-color: var(--iconsBg);
 	color: black; /* Change this to the color you want when hovering */
 	transform: scale(1.2); /* Makes the icon grow slightly */
 }

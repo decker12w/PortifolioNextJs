@@ -1,7 +1,7 @@
 import NavLink from "./NavLink";
 import Style from "./NavBar.module.css";
-import { CiDark } from "react-icons/ci";
 import HamburguerMenu from "./HamburguerMenu";
+import DarkMode from "./DarkMode";
 interface LinkProps {
 	nome: string;
 	link: string;
@@ -39,7 +39,7 @@ export default function NavBar() {
 					return <NavLink key={index} nome={link.nome} link={link.link}></NavLink>;
 				})}
 			</ul>
-			<CiDark className={Style.icon} />
+			<DarkMode></DarkMode>
 			<HamburguerMenu link={listaNavLinks}></HamburguerMenu>
 		</nav>
 	);

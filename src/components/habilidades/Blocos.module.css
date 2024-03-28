@@ -1,5 +1,5 @@
 .title {
-	color: white;
+	color: var(--text);
 	font-size: xx-large;
 }
 

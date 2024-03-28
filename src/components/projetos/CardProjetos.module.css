@@ -6,7 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	border-bottom: 4px solid;
-	border-image: linear-gradient(to right, violet, indigo) 1;
+	border-image: linear-gradient(to right, #8257e6, #a40ee4) 1;
 	background-color: rgba(0, 0, 0, 0.6);
 	transition: all 0.2s ease-in-out;
 }

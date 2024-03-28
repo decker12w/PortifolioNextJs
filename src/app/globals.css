@@ -3,9 +3,96 @@
 @tailwind utilities;
 
 :root {
+	--black: #000;
+	--white: #f3f8ff;
+	--text: #000;
 	--bg: #262626;
+	--bgColorLight: #f3f8ff;
+	--bgColorDark: #262626;
 	--purple: #5f5aa2;
 	--purpleSoft: #6e07f3;
+	--trianglesColor: var(black);
+	--footerColor: var(--purpleSoft);
+	--animatedBackgroundColor: rgba(0, 0, 0, 1);
+	--singleLettersColor: var(--purpleSoft);
+	--buttonsColor: var(--purpleSoft);
+	--linkHoverColor: var(--purpleSoft);
+	--icons: var(--white);
+	--iconsBg: var(--black);
+	--RevealColor: #6e07f3;
+	--scrollColor: var(--purpleSoft);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: var(--bgColorDark);
+		--text: var(--white);
+		--purple: #5f5aa2;
+		--purpleSoft: #6e07f3;
+		--animatedBackgroundColor: rgba(255, 255, 255, 0.2);
+		--trianglesColor: var(--purpleSoft);
+		--footerColor: var(--purpleSoft);
+		--singleLettersColor: var(--purpleSoft);
+		--buttonsColor: var(--purpleSoft);
+		--linkHoverColor: var(--purpleSoft);
+		--icons: var(--white);
+		--iconsBg: var(--black);
+		--RevealColor: var(--purpleSoft);
+		--scrollColor: var(--white);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: var(--bgColorLight);
+		--text: var(--black);
+		--purple: #5f5aa2;
+		--purpleSoft: #6e07f3;
+		--animatedBackgroundColor: rgba(0, 0, 0, 1);
+		--trianglesColor: var(--black);
+		--footerColor: var(--black);
+		--singleLettersColor: var(--black);
+		--linkHoverColor: var(--black);
+		--buttonsColor: var(--black);
+		--icons: var(--black);
+		--iconsBg: var(--white);
+		--RevealColor: var(--black);
+		--scrollColor: var(--purpleSoft);
+	}
+}
+
+[data-theme="dark"] {
+	--bg: var(--bgColorDark);
+	--text: var(--white);
+	--purple: #5f5aa2;
+	--purpleSoft: #6e07f3;
+	--animatedBackgroundColor: rgba(255, 255, 255, 0.2);
+	--trianglesColor: var(--purpleSoft);
+	--footerColor: var(--purpleSoft);
+	--singleLettersColor: var(--purpleSoft);
+	--buttonsColor: var(--purpleSoft);
+	--linkHoverColor: var(--purpleSoft);
+	--icons: var(--black);
+	--iconsBg: var(--white);
+	--RevealColor: var(--purpleSoft);
+	--scrollColor: var(--white);
+}
+
+[data-theme="light"] {
+	--bg: var(--bgColorLight);
+	--text: var(--black);
+	--purple: #5f5aa2;
+	--purpleSoft: #6e07f3;
+	--animatedBackgroundColor: rgba(0, 0, 0, 1);
+	--trianglesColor: var(--black);
+	--footerColor: var(--black);
+	--singleLettersColor: var(--black);
+	--linkHoverColor: var(--black);
+	--buttonsColor: var(--black);
+	--icons: var(--black);
+	--iconsBg: var(--white);
+	--RevealColor: var(--black);
+	--scrollColor: var(--purpleSoft);
 }
 
 body {

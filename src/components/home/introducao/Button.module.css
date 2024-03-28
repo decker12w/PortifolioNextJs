@@ -1,13 +1,13 @@
 .button {
 	padding: 20px;
 	border-radius: 20px;
-	color: white;
+	color: var(--white);
 	font-weight: bold;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(to right, white 50%, var(--purpleSoft) 50%);
+	background: linear-gradient(to right, var(--text) 50%, var(--buttonsColor) 50%);
 	background-size: 250% 100%;
 	background-position: right bottom;
 	transition: all 0.3s ease-out;

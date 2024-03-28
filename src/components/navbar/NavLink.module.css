@@ -1,5 +1,5 @@
 .link {
-	color: white;
+	color: var(--text);
 	font-size: 18px;
 	padding: 0.5rem 1rem;
 	font-weight: bold;
@@ -11,7 +11,7 @@
 }
 
 .link:hover {
-	color: var(--purpleSoft);
+	color: var(--linkHoverColor);
 	transform: scale(1.1);
 }
 
@@ -20,7 +20,7 @@
 	position: absolute;
 	width: 0%;
 	height: 5px;
-	background: var(--purpleSoft);
+	background: var(--linkHoverColor);
 	left: 50%;
 	bottom: 0;
 	border-radius: 15px;
@@ -33,7 +33,7 @@
 }
 
 .linkActive {
-	color: var(--purpleSoft);
+	color: var(--linkHoverColor);
 	transform: scale(0.9);
 }
 

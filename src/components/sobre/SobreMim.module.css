@@ -20,7 +20,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: white;
+	color: var(--text);
 	gap: 30px;
 	font-size: 20px;
 	max-width: 700px;
@@ -31,7 +31,7 @@
 	font-size: 60px;
 	font-weight: bold;
 	border-bottom: 4px solid;
-	border-image: linear-gradient(to right, violet, indigo) 1;
+	border-image: linear-gradient(to right, #8257e6, #a40ee4) 1;
 }
 
 @keyframes shapeBlob {

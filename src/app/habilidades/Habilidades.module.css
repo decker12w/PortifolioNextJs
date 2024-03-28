@@ -10,7 +10,7 @@
 	font-weight: bold;
 	border-bottom: 2px solid;
 	margin-right: auto;
-	color: white;
+	color: var(--text);
 	animation: colorChange 15s linear infinite;
 }
 

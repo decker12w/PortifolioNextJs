@@ -14,7 +14,7 @@
 div.leftBottomTriangle {
 	z-index: -1;
 	border-right: 280px solid transparent;
-	border-bottom: 380px solid var(--purpleSoft);
+	border-bottom: 600px solid var(--trianglesColor);
 }
 @media (max-width: 1670px) {
 	.container {

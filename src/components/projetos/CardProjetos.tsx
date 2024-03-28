@@ -17,13 +17,15 @@ export default function CardProjetos({ children, title, src, data }: CardProjeto
 	const [showVerMais, setShowVerMais] = useState(false);
 	const [showModal, setShowModal] = useState(false);
 
+	// const toggleModal = () => setShowModal(prev => !prev);
+
 	return (
 		<>
 			<div
 				className={Style.container}
 				onMouseEnter={() => setShowVerMais(true)}
 				onMouseLeave={() => setShowVerMais(false)}
-				onClick={() => setShowModal(prev => !prev)}
+				onClick={() => setShowModal(true)}
 			>
 				<Image className={Style.image} quality={100} layout="fill" alt="" src={src} />
 				<div className={Style.containerTexto}>
@@ -32,7 +34,13 @@ export default function CardProjetos({ children, title, src, data }: CardProjeto
 				</div>
 				{showVerMais && <VerMais data={data}></VerMais>}
 			</div>
-			{showModal && <Modal title={title} src={src} data={data} show={showModal}></Modal>}
+			<Modal
+				title={title}
+				src={src}
+				data={data}
+				open={showModal}
+				onClose={() => setShowModal(false)}
+			></Modal>
 		</>
 	);
 }

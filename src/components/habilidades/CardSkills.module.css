@@ -12,7 +12,7 @@
 	gap: 20px;
 	box-shadow: 0 2px 5px rgba(103, 4, 216, 0.3);
 	border-bottom: 4px solid;
-	border-image: linear-gradient(to right, violet, indigo) 1;
+	border-image: linear-gradient(to right, #8257e6, #a40ee4) 1;
 	transition: all 0.2s ease-in-out;
 }
 

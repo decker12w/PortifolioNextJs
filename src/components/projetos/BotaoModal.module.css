@@ -1,0 +1,8 @@
+.botao {
+	background-color: var(--purpleSoft);
+	color: white;
+	width: 10rem;
+	height: 3rem;
+	border-radius: 20px;
+	font-size: 0.8rem;
+}

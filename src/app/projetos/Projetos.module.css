@@ -25,11 +25,11 @@
 }
 .titlePage {
 	text-align: start;
-	color: white;
+	color: var(--text);
 	font-size: 40px;
 	font-weight: bold;
 	border-bottom: 4px solid;
-	border-image: linear-gradient(to right, violet, indigo) 1;
+	border-image: linear-gradient(to right, #8257e6, #a40ee4) 1;
 	margin-right: auto;
 }
 
