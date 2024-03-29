@@ -45,6 +45,10 @@
 	justify-items: center;
 }
 
+.containerLinks li a {
+	font-size: 1.8rem;
+}
+
 .Nav {
 	z-index: 1000;
 	height: 50px;
@@ -65,7 +69,7 @@
 
 @media (max-width: 1300px) {
 	.SideBarNav {
-		background: black;
+		background: var(--bg);
 		width: 100vw;
 		height: 100vh;
 		display: flex;
@@ -85,6 +89,7 @@
 	}
 
 	.hamburguer {
+		color: var(--purpleSoft);
 		display: block;
 	}
 }

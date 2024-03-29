@@ -1,12 +1,12 @@
 "use client";
 
 import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
-import { CiDark } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import Style from "./HamburguerMenu.module.css";
 import NavLink from "./NavLink";
+import DarkMode from "./DarkMode";
 
 interface HamburguerMenuProps {
 	link: LinkProps[];
@@ -39,7 +39,7 @@ export default function HamburguerMenu({ link }: HamburguerMenuProps) {
 			<nav className={`${Style.SideBarNav} ${isOpen ? Style.open : ""}`}>
 				<div className={Style.Nav}>
 					<IoClose onClick={handleOpen} className={`${Style.icon}`}></IoClose>
-					<CiDark onClick={handleOpen} className={`${Style.icon}`}></CiDark>
+					<DarkMode className={Style.icon}></DarkMode>
 				</div>
 				<div className={Style.NavWrapper}>
 					<ul className={Style.containerLinks}>

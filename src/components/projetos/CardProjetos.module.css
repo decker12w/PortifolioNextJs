@@ -42,3 +42,9 @@
 .image {
 	z-index: -1;
 }
+
+@media (max-width: 768px) {
+	.container {
+		width: 80vw;
+	}
+}

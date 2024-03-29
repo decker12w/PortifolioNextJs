@@ -1,9 +1,12 @@
 "use client";
-import React, { useEffect, useLayoutEffect } from "react";
 import { CiDark } from "react-icons/ci";
 import Style from "./DarkMode.module.css";
 
-export default function DarkMode() {
+interface props {
+	className?: string;
+}
+
+export default function DarkMode({ className }: props) {
 	const setDarkMode = () => {
 		document.querySelector("body")?.setAttribute("data-theme", "dark");
 	};
@@ -18,5 +21,5 @@ export default function DarkMode() {
 			setDarkMode();
 		}
 	};
-	return <CiDark onClick={toggleDarkMode} className={Style.icon} />;
+	return <CiDark onClick={toggleDarkMode} className={`{${Style.icon}} ${className}`} />;
 }

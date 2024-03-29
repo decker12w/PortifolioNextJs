@@ -72,3 +72,63 @@
 	font-size: 1.1rem;
 	border: solid 5px #8257e6;
 }
+
+@media (max-width: 1300px) {
+	.containerPrincipal {
+		flex-direction: column-reverse;
+		gap: 50px;
+	}
+	.containerImage {
+		gap: 30px;
+	}
+	.containerBotoes {
+		margin-right: 0;
+		gap: 20px;
+	}
+	.modal {
+		padding: 30px;
+	}
+	.title {
+		font-size: 1.5rem;
+	}
+	.paragraph {
+		font-size: 0.9rem;
+	}
+	.date {
+		font-size: 1rem;
+	}
+	.image {
+		width: 60%;
+		height: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	.modal {
+		padding: 20px;
+	}
+	.title {
+		font-size: 1.2rem;
+	}
+	.paragraph {
+		font-size: 0.7rem;
+	}
+	.date {
+		font-size: 0.8rem;
+	}
+	.image {
+		font-size: 1rem;
+	}
+	.containerPrincipal {
+		gap: 30px;
+	}
+	.containerImage {
+		gap: 20px;
+	}
+	.containerBotoes {
+		gap: 10px;
+	}
+	.close {
+		font-size: 1.5rem;
+	}
+}

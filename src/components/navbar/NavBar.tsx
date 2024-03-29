@@ -39,7 +39,7 @@ export default function NavBar() {
 					return <NavLink key={index} nome={link.nome} link={link.link}></NavLink>;
 				})}
 			</ul>
-			<DarkMode></DarkMode>
+			<DarkMode className={Style.icon}></DarkMode>
 			<HamburguerMenu link={listaNavLinks}></HamburguerMenu>
 		</nav>
 	);
