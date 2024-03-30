@@ -89,7 +89,7 @@
 	}
 
 	.hamburguer {
-		color: var(--purpleSoft);
+		color: var(--hamburguerColor);
 		display: block;
 	}
 }

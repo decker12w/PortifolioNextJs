@@ -21,6 +21,7 @@
 	--iconsBg: var(--black);
 	--RevealColor: #6e07f3;
 	--scrollColor: var(--purpleSoft);
+	--hamburguerColor: var(--purpleSoft);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,6 +40,7 @@
 		--iconsBg: var(--black);
 		--RevealColor: var(--purpleSoft);
 		--scrollColor: var(--white);
+		--hamburguerColor: var(--white);
 	}
 }
 
@@ -58,6 +60,7 @@
 		--iconsBg: var(--white);
 		--RevealColor: var(--black);
 		--scrollColor: var(--purpleSoft);
+		--hamburguerColor: var(--purpleSoft);
 	}
 }
 
@@ -76,6 +79,7 @@
 	--iconsBg: var(--white);
 	--RevealColor: var(--purpleSoft);
 	--scrollColor: var(--white);
+	--hamburguerColor: var(--white);
 }
 
 [data-theme="light"] {
@@ -93,6 +97,7 @@
 	--iconsBg: var(--white);
 	--RevealColor: var(--black);
 	--scrollColor: var(--purpleSoft);
+	--hamburguerColor: var(--purpleSoft);
 }
 
 body {

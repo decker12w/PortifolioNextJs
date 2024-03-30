@@ -5,6 +5,7 @@ import Footer from "../components/footer/Footer";
 
 import { Poppins } from "next/font/google";
 import ScrollTop from "../components/scrollTop/ScrollTop";
+import { DarkModeProvider } from "../context/darkModeContext";
 
 const PoppinsFont = Poppins({
 	subsets: ["latin"],
@@ -25,7 +26,9 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={PoppinsFont.className}>
 				<div className="container">
-					<NavBar></NavBar>
+					<DarkModeProvider>
+						<NavBar></NavBar>
+					</DarkModeProvider>
 					{children}
 				</div>
 				<Footer></Footer>

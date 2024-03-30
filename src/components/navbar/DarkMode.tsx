@@ -1,25 +1,29 @@
 "use client";
+
+import { CiLight } from "react-icons/ci";
 import { CiDark } from "react-icons/ci";
 import Style from "./DarkMode.module.css";
+import { useDarkMode } from "../../context/darkModeContext";
 
 interface props {
 	className?: string;
 }
 
 export default function DarkMode({ className }: props) {
-	const setDarkMode = () => {
-		document.querySelector("body")?.setAttribute("data-theme", "dark");
-	};
-	const setLightMode = () => {
-		document.querySelector("body")?.setAttribute("data-theme", "light");
-	};
-
-	const toggleDarkMode = () => {
-		if (document.querySelector("body")?.getAttribute("data-theme") === "dark") {
-			setLightMode();
-		} else {
-			setDarkMode();
-		}
-	};
-	return <CiDark onClick={toggleDarkMode} className={`{${Style.icon}} ${className}`} />;
+	const { darkMode, toggleDarkMode } = useDarkMode();
+	return (
+		<>
+			{darkMode ? (
+				<CiLight
+					onClick={toggleDarkMode}
+					className={`${Style.light} ${Style.icon} ${className}`}
+				/>
+			) : (
+				<CiDark
+					onClick={toggleDarkMode}
+					className={`${Style.dark} ${Style.icon} ${className}`}
+				/>
+			)}
+		</>
+	);
 }

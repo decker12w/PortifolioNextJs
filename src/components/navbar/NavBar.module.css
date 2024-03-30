@@ -24,23 +24,6 @@
 	color: var(--singleLettersColor);
 }
 
-.icon {
-	z-index: 1000;
-	padding: 10px;
-	border-radius: 50%;
-	font-size: 55px;
-	color: var(--icons);
-	transition: all 0.2s ease-in-out;
-}
-.icon:hover {
-	background-color: var(--iconsBg);
-	color: black; /* Change this to the color you want when hovering */
-	transform: scale(1.2); /* Makes the icon grow slightly */
-}
-
-.icon:active {
-	transform: scale(0.9);
-}
 @media (max-width: 1300px) {
 	.container {
 		display: none;

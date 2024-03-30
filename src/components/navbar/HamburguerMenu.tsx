@@ -12,7 +12,7 @@ interface HamburguerMenuProps {
 	link: LinkProps[];
 }
 export default function HamburguerMenu({ link }: HamburguerMenuProps) {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	const handleOpen = () => {
 		setIsOpen(!isOpen);
