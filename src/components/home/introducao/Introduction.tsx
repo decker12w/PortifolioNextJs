@@ -26,7 +26,7 @@ export default function Introduction() {
 			</div>
 			<Reveal>
 				<div className={Style.container4}>
-					<Button text={"Download csv"}></Button>
+					<Button text={"Download cv"}></Button>
 					<Button text={"Entrar em contato"}></Button>
 				</div>
 			</Reveal>

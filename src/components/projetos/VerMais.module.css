@@ -10,6 +10,7 @@
 	background-color: #212121;
 	color: black;
 	border-radius: 5px;
+	z-index: -3000;
 }
 
 .data {

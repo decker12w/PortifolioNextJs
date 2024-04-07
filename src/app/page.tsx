@@ -4,7 +4,6 @@ import Style from "./Home.module.css";
 import AnimatedBackground from "../components/formas/AnimatedBackground";
 import LeftTriangle from "../components/formas/LeftTriangle";
 import RightTriangle from "../components/formas/RightTriangle";
-
 export default function Home() {
 	return (
 		<AnimatedBackground>

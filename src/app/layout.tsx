@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/footer/Footer";
-
 import { Poppins } from "next/font/google";
 import ScrollTop from "../components/scrollTop/ScrollTop";
 import { DarkModeProvider } from "../context/darkModeContext";

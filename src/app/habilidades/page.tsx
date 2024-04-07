@@ -3,7 +3,6 @@ import Frontend from "@/src/components/habilidades/Frontend";
 import Backend from "@/src/components/habilidades/Backend";
 import Linguagens from "@/src/components/habilidades/Linguagens";
 import DevOps from "@/src/components/habilidades/DevOps";
-import { Reveal } from "@/src/components/utils/Reveal";
 
 export default function Habilidades() {
 	return (
