@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 interface LinkProps {
 	nome: string;
 	link: string;
-	open: () => void;
+	open?: () => void;
 }
 export default function NavLink({ nome, link, open }: LinkProps) {
 	const pathname = usePathname();

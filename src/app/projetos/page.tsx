@@ -31,9 +31,9 @@ export default function Projetos() {
 							descricao={projeto.descricao}
 						>
 							<div className={Style.containerIcons}>
-								{projeto.icons.map(icon => {
+								{projeto.icons.map((icon, index) => {
 									const IconComponent = iconMapping[icon];
-									return <IconComponent className={Style.icon} />;
+									return <IconComponent key={index} className={Style.icon} />;
 								})}
 							</div>
 						</CardProjetos>
@@ -55,9 +55,9 @@ export default function Projetos() {
 							descricao={projeto.descricao}
 						>
 							<div className={Style.containerIcons}>
-								{projeto.icons.map(icon => {
+								{projeto.icons.map((icon, index) => {
 									const IconComponent = iconMapping[icon];
-									return <IconComponent className={Style.icon} />;
+									return <IconComponent key={index} className={Style.icon} />;
 								})}
 							</div>
 						</CardProjetos>
