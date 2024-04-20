@@ -1,5 +1,5 @@
 "use client";
-import { createContext, ReactNode, useState, useContext } from "react";
+import { createContext, ReactNode, useState, useContext, useEffect } from "react";
 
 interface DarkModeContextData {
 	darkMode: boolean;
@@ -14,14 +14,23 @@ interface DarkModeProviderProps {
 }
 
 export const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
-	const [darkMode, setDarkMode] = useState(true);
+	const [darkMode, setDarkMode] = useState<boolean>(false);
+
+	useEffect(() => {
+		const userPrefersDark =
+			window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+		setDarkMode(userPrefersDark);
+	}, []);
+
+	useEffect(() => {
+		if (darkMode) {
+			document.querySelector("body")?.setAttribute("data-theme", "dark");
+		} else {
+			document.querySelector("body")?.setAttribute("data-theme", "light");
+		}
+	}, [darkMode]);
 
 	const toggleDarkMode = () => {
-		if (darkMode) {
-			document.querySelector("body")?.setAttribute("data-theme", "light");
-		} else {
-			document.querySelector("body")?.setAttribute("data-theme", "dark");
-		}
 		setDarkMode(!darkMode);
 	};
 
