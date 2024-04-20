@@ -9,6 +9,9 @@
 	gap: 20px;
 }
 
+.link {
+	z-index: 100;
+}
 .icon {
 	z-index: 100;
 	font-size: 25px;

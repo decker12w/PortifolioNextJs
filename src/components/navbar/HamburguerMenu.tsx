@@ -7,6 +7,8 @@ import { IoClose } from "react-icons/io5";
 import Style from "./HamburguerMenu.module.css";
 import NavLink from "./NavLink";
 import DarkMode from "./DarkMode";
+import { Links } from "../utils/Links";
+import Link from "next/link";
 
 interface HamburguerMenuProps {
 	link: LinkProps[];
@@ -44,14 +46,27 @@ export default function HamburguerMenu({ link }: HamburguerMenuProps) {
 				<div className={Style.NavWrapper}>
 					<ul className={Style.containerLinks}>
 						{link.map((link, index) => {
-							return <NavLink key={index} nome={link.nome} link={link.link}></NavLink>;
+							return (
+								<NavLink
+									open={handleOpen}
+									key={index}
+									nome={link.nome}
+									link={link.link}
+								></NavLink>
+							);
 						})}
 					</ul>
 				</div>
 				<div className={Style.containerIcons}>
-					<FaGithub className={Style.icon}></FaGithub>
-					<FaWhatsapp className={Style.icon}>/</FaWhatsapp>
-					<FaLinkedin className={Style.icon}></FaLinkedin>
+					<Link href={Links.github}>
+						<FaGithub className={Style.icon}></FaGithub>
+					</Link>
+					<Link href={Links.whatsapp}>
+						<FaWhatsapp className={Style.icon}>/</FaWhatsapp>
+					</Link>
+					<Link href={Links.linkedin}>
+						<FaLinkedin className={Style.icon}></FaLinkedin>
+					</Link>
 				</div>
 			</nav>
 		</>

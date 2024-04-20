@@ -11,9 +11,20 @@ interface CardProjetosProps {
 	title: string;
 	src: string;
 	data: string;
+	repositorio: string;
+	projeto: string;
+	descricao: string;
 }
 
-export default function CardProjetos({ children, title, src, data }: CardProjetosProps) {
+export default function CardProjetos({
+	children,
+	title,
+	src,
+	data,
+	repositorio,
+	projeto,
+	descricao
+}: CardProjetosProps) {
 	const [showVerMais, setShowVerMais] = useState(false);
 	const [showModal, setShowModal] = useState(false);
 
@@ -39,6 +50,9 @@ export default function CardProjetos({ children, title, src, data }: CardProjeto
 				src={src}
 				data={data}
 				open={showModal}
+				repositorio={repositorio}
+				projeto={projeto}
+				descricao={descricao}
 				onClose={() => setShowModal(false)}
 			></Modal>
 		</>

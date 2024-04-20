@@ -5,11 +5,13 @@ import { motion } from "framer-motion";
 
 interface ButtonProps {
 	text: string;
+	onClick?: () => void;
 }
 
-export default function Button({ text }: ButtonProps) {
+export default function Button({ onClick, text }: ButtonProps) {
 	return (
 		<motion.button
+			onClick={onClick}
 			className={Style.button}
 			whileHover={{
 				scale: 1.1
