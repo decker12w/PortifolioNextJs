@@ -49,12 +49,12 @@ export default function Linguagens() {
 				<CardSkills title="Sass">
 					<FaSass className={Style2.icon}></FaSass>
 				</CardSkills>
-				<CardSkills title="Storybook">
-					<SiStorybook className={Style2.icon}></SiStorybook>
-				</CardSkills>
-				<CardSkills title="React Query">
-					<SiReactquery className={Style2.icon}></SiReactquery>
-				</CardSkills>
+				{/* <CardSkills title="Storybook"> */}
+				{/* 	<SiStorybook className={Style2.icon}></SiStorybook> */}
+				{/* </CardSkills> */}
+				{/* <CardSkills title="React Query"> */}
+				{/* 	<SiReactquery className={Style2.icon}></SiReactquery> */}
+				{/* </CardSkills> */}
 			</div>
 		</div>
 	);

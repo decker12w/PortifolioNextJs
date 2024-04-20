@@ -27,30 +27,30 @@ export default function DevOps() {
 				<CardSkills title="Docker">
 					<FaDocker className={Style2.icon}></FaDocker>
 				</CardSkills>
-				<CardSkills title="Kubernets">
-					<SiKubernetes className={Style2.icon}></SiKubernetes>
-				</CardSkills>
-				<CardSkills title="Terraform">
-					<SiTerraform className={Style2.icon}></SiTerraform>
-				</CardSkills>
-				<CardSkills title="Jenkins">
-					<FaJenkins className={Style2.icon}></FaJenkins>
-				</CardSkills>
+				{/* <CardSkills title="Kubernets"> */}
+				{/* 	<SiKubernetes className={Style2.icon}></SiKubernetes> */}
+				{/* </CardSkills> */}
+				{/* <CardSkills title="Terraform"> */}
+				{/* 	<SiTerraform className={Style2.icon}></SiTerraform> */}
+				{/* </CardSkills> */}
+				{/* <CardSkills title="Jenkins"> */}
+				{/* 	<FaJenkins className={Style2.icon}></FaJenkins> */}
+				{/* </CardSkills> */}
 				<CardSkills title="GitLab">
 					<FaGitlab className={Style2.icon}></FaGitlab>
 				</CardSkills>
 				<CardSkills title="Shell">
 					<SiPowershell className={Style2.icon}></SiPowershell>
 				</CardSkills>
-				<CardSkills title="Asterisk">
-					<FaAsterisk className={Style2.icon}></FaAsterisk>
-				</CardSkills>
-				<CardSkills title="Prometheus">
-					<SiPrometheus className={Style2.icon}></SiPrometheus>
-				</CardSkills>
-				<CardSkills title="Ansible">
-					<SiAnsible className={Style2.icon}></SiAnsible>
-				</CardSkills>
+				{/* <CardSkills title="Asterisk"> */}
+				{/* 	<FaAsterisk className={Style2.icon}></FaAsterisk> */}
+				{/* </CardSkills> */}
+				{/* <CardSkills title="Prometheus"> */}
+				{/* 	<SiPrometheus className={Style2.icon}></SiPrometheus> */}
+				{/* </CardSkills> */}
+				{/* <CardSkills title="Ansible"> */}
+				{/* 	<SiAnsible className={Style2.icon}></SiAnsible> */}
+				{/* </CardSkills> */}
 			</div>
 		</div>
 	);

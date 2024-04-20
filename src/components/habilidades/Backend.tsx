@@ -49,9 +49,9 @@ export default function Backend() {
 				<CardSkills title="MongoDB">
 					<BiLogoMongodb className={Style2.icon}></BiLogoMongodb>
 				</CardSkills>
-				<CardSkills title="Apache">
-					<SiApache className={Style2.icon}></SiApache>
-				</CardSkills>
+				{/* <CardSkills title="Apache"> */}
+				{/* 	<SiApache className={Style2.icon}></SiApache> */}
+				{/* </CardSkills> */}
 				<CardSkills title="Nginx">
 					<SiNginx className={Style2.icon}></SiNginx>
 				</CardSkills>
