@@ -25,13 +25,7 @@
 	align-items: center;
 	gap: 50px;
 }
-.containerImage {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 30px;
-}
+
 .containerBotoes {
 	align-items: center;
 	justify-items: center;
@@ -67,10 +61,23 @@
 	margin-right: auto;
 }
 
+.containerImage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
 .image {
 	border-radius: 20px;
 	font-size: 1.1rem;
 	border: solid 5px #8257e6;
+	transition: opacity 0.3s ease-in-out; /* Para uma transição suave */
+}
+
+.image.loading {
+	opacity: 0.5; /* Estilo para indicar que a imagem está carregando */
 }
 
 @media (max-width: 1300px) {

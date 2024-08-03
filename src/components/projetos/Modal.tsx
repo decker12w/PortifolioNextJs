@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useState, useLayoutEffect } from "react";
 import Style from "./Modal.module.css";
 import Image from "next/image";
 import BotaoModal from "./BotaoModal";
@@ -28,6 +28,7 @@ export default function Modal({
 	descricao
 }: ModalProps) {
 	const dialogRef = useRef<null | HTMLDialogElement>(null);
+	const [isLoading, setIsLoading] = useState(true);
 
 	useLayoutEffect(() => {
 		if (open && !dialogRef.current?.open) {
@@ -58,13 +59,14 @@ export default function Modal({
 			<div className={Style.containerPrincipal}>
 				<div className={Style.containerImage}>
 					<Image
-						className={Style.image}
+						className={`${Style.image} ${isLoading ? Style.loading : ""}`}
 						quality={100}
 						width={800}
 						height={800}
 						alt=""
 						src={src}
-					></Image>
+						onLoadingComplete={() => setIsLoading(false)}
+					/>
 					<div className={Style.containerBotoes}>
 						<BotaoModal href={projeto} text={"Acessar projeto"}></BotaoModal>
 						<BotaoModal href={repositorio} text={"Acessar repositório"}></BotaoModal>

@@ -27,8 +27,8 @@ export default function CardProjetos({
 }: CardProjetosProps) {
 	const [showVerMais, setShowVerMais] = useState(false);
 	const [showModal, setShowModal] = useState(false);
-
-	// const toggleModal = () => setShowModal(prev => !prev);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(false);
 
 	return (
 		<>
@@ -38,7 +38,17 @@ export default function CardProjetos({
 				onMouseLeave={() => setShowVerMais(false)}
 				onClick={() => setShowModal(true)}
 			>
-				<Image className={Style.image} quality={100} layout="fill" alt="" src={src} />
+				{loading && <div className={Style.loading}>Loading...</div>}
+				{error && <div className={Style.error}>Failed to load image</div>}
+				<Image
+					className={Style.image}
+					quality={100}
+					layout="fill"
+					alt=""
+					src={src}
+					onLoadingComplete={() => setLoading(false)}
+					onError={() => setError(true)}
+				/>
 				<div className={Style.containerTexto}>
 					<h2 className={Style.title}>{title}</h2>
 					{children}

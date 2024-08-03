@@ -5,6 +5,15 @@
 	height: 3rem;
 	border-radius: 20px;
 	font-size: 0.8rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.botao:hover {
+	transform: scale(1.1);
+}
+
+.botao:active {
+	transform: scale(0.9);
 }
 
 @media (max-width: 768px) {

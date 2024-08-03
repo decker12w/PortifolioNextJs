@@ -10,6 +10,7 @@ import { DiRedis } from "react-icons/di";
 import { SiJest } from "react-icons/si";
 import { SiJunit5 } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
+import { SiFastify } from "react-icons/si";
 import { SiApache } from "react-icons/si";
 import { SiNginx } from "react-icons/si";
 import CardSkills from "./CardSkills";
@@ -19,11 +20,14 @@ export default function Backend() {
 		<div className={Style.containerBlocos}>
 			<h1 className={Style.title}>Backend</h1>
 			<div className={Style.containerIcones}>
+				<CardSkills title="Node.js">
+					<FaNodeJs className={Style2.icon}></FaNodeJs>
+				</CardSkills>
 				<CardSkills title="Spring">
 					<SiSpring className={Style2.icon}></SiSpring>
 				</CardSkills>
-				<CardSkills title="Node.js">
-					<FaNodeJs className={Style2.icon}></FaNodeJs>
+				<CardSkills title="Fastify">
+					<SiFastify className={Style2.icon}></SiFastify>
 				</CardSkills>
 				<CardSkills title="Nest.js">
 					<SiNestjs className={Style2.icon}></SiNestjs>
